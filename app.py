@@ -34,4 +34,5 @@ def predict():
     return jsonify({'compliant': int(prediction[0])})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=False)  # Set debug=False for production
+
